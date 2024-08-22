@@ -1,0 +1,168 @@
+/*----main equipo---*/
+
+.img-principal{
+    width: 100%;  
+}
+
+
+.btn-index{
+ @include flex;
+    .btn-informacion{
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 4rem;
+    background: $colorfondo1;
+    margin-bottom: 5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    color: $colortexto2;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 10px 5px 10px 0px $textosubtitulo;
+    border: none;
+    }
+    }
+
+    .a-de-buttom{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        .btn-informacion:hover{
+        background-color: $colorfondo3;
+        cursor: pointer;
+        }
+    }
+
+/*-----segundo main----*/
+
+.section-cuidado{
+@include flex2;
+    h2 p {
+        padding: 1rem; 
+    }
+    .img-tratamiento{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        clip-path: circle(50% at 50% 50%);
+        box-shadow: $boxshadow;
+    }
+}
+
+
+.pestanas p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font:large;
+    color:$colortexto1;
+    background-color: $cardcuidadofondo;
+    .pestanas img{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-content: center;
+}
+}
+
+.Pmu p{
+@extend.pestanas
+} 
+
+/*------ tercer main---*/
+
+.section-cuidado .img-tratamiento{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: $boxshadow;
+}
+.titulo-agenda h1 p {
+    text-align: center;
+    justify-content: center;
+    color:$colortexto1;
+    font-size: 2rem;
+    font-style:normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:$boxshadow;
+    padding: 1rem;
+}
+
+.parrafo-equipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    background-color: $colortexto2;
+    padding: 1rem;
+    p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:$colortexto1;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    img{
+    width: 70%;
+    margin-bottom: 1.5rem;
+    }
+    }
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container p{
+    text-align: center;
+    }
+}
+
+.parrafo-equipo .img-personal-1{
+    width: 58%;
+}
+
+.parrafo-equipo .img-personal-3{
+    width: 65%;
+}
+
+.descripcion-equipo{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+p{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $colortexto1;
+    font-size: medium;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    }
+}
+.btn-agenda-aqui{
+    border-radius: 5rem;
+    background-color: $cardcuidadofondo;
+    padding: 1rem 5rem 1rem 5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $colortexto1;
+}
+
+/*-----cuarto main---*/
+
+
+
+/*-----main contacto----*/
+
+
+.main a {
+    bottom:initial;
+    color: $colortexto1;
+    margin: 8px;
+    font-size: larger;
+    background-color: $boxshadow;
+}

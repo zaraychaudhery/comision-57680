@@ -1,0 +1,30 @@
+/*-----importaciones----*/
+
+/*utilities*/
+
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/maps";
+@import "./utilities/funciones";
+
+/*base*/
+
+@import "./base/reset";
+@import "./base/fuentes";
+
+/*layout*/
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+/*components*/
+
+@import "./components/bootstrap";
+@import "./components/navbar";
+@import "./components/card";
+
+/*media query*/
+
+@import "./layout/mediaquery/media1024";
+@import "./layout/mediaquery/media.768";
+@import "./layout/mediaquery/media480";

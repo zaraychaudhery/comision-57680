@@ -1,12 +1,17 @@
-*{
+/*-----importaciones----*/
+/*utilities*/
+/*colores fonos y letras*/
+/*---mixin flex---*/
+/*base*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} /* recetea el sitio */
+}
 
-
+/*layout*/
+/*---header index---*/
 .header {
-  background-color: rgb(199, 181, 181);
   border-bottom: 1px solid #ccc;
   text-align: center;
   padding-top: 2rem;
@@ -15,6 +20,7 @@
 }
 
 .nav-index {
+  background-image: linear-gradient(to right top, rgb(199, 181, 181) 80%, rgb(221, 218, 218) 20%);
   margin-bottom: 10px;
   justify-content: center;
   display: flex;
@@ -25,7 +31,6 @@
   margin: 0%;
   padding: 0%;
 }
-
 .nav-index ul {
   list-style: none;
   padding: 2rem;
@@ -33,60 +38,26 @@
   justify-content: center;
   gap: 5rem;
 }
-
-.nav-index ul li {
+.nav-index li {
   margin: 0%;
   font-size: 1rem;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
-
-.nav-index ul li a {
+.nav-index a {
   text-decoration: none;
   color: rgb(50, 39, 35);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-/*----BOOTSRAP NAV---*/
-.header-principal{
-  background-color: rgb(199, 181, 181);
+.div-header img {
+  width: 6rem;
+  height: 6rem;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: rgb(50, 39, 35);
-}
-
-.navegacion-link{
-  text-decoration: none;
-}
-
-
-  /*----------*/
-
-.div-titulos-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.div-titulos-index h1 {
-  margin: 10px 0;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: .3rem;
-  font-size: 1.875rem;
-  color: rgb(50, 39, 35);
-}
-
-.div-titulos-index h2 {
-  margin: 5px 0;
-  font-size: 1.25rem;
-  color: #666;
-}
-
-.div-header{
+/*--div header de todos---*/
+.div-header {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -96,25 +67,76 @@
   padding: 2rem;
 }
 
-.div-header img{
+.div-titulos-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-titulos-index h1 {
+  margin: 10px 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 1.875rem;
+  color: rgb(50, 39, 35);
+}
+.div-titulos-index h2 {
+  margin: 5px 0;
+  font-size: 1.25rem;
+  color: #3f3d3d;
+}
+.div-titulos-index img {
   width: 6rem;
   height: 6rem;
 }
 
-.img-principal img{
+.img-principal img {
   width: 100%;
 }
 
-/* --------- BTN PROCEDIMIENTOS Y CONTACTANOS-------- */
+/*--header cuidados--*/
+.section-cuidado {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  column-gap: 2rem;
+  text-align: center;
+}
+.section-cuidado h2, .section-cuidado p {
+  padding: 1rem;
+}
+.section-cuidado img-tratamiento {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+  box-shadow: #3f3d3d;
+}
 
-.btn-index{
+.div-header-cuidados, .div-header h1 {
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  color: rgb(50, 39, 35);
+  font-size: 2rem;
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*----header 3-4-5html---*/
+/*-------------*/
+/*----main equipo---*/
+.img-principal {
+  width: 100%;
+}
+
+.btn-index {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   width: 100%;
 }
-
-.btn-informacion{
+.btn-index .btn-informacion {
   display: flex;
   align-items: center;
   padding: 1rem 5rem 1rem 5rem;
@@ -126,149 +148,113 @@
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: bold;
-  box-shadow: 10px 5px 10px 0px rgb(158, 138, 138);
+  box-shadow: 10px 5px 10px 0px #3f3d3d;
   border: none;
 }
 
-.btn-informacion:hover{
-  background-color: rgba(51, 50, 50, 0.5);
-  cursor: pointer;
-}
-
-.a-de-buttom{
+.a-de-buttom {
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10rem;
 }
+.a-de-buttom .btn-informacion:hover {
+  background-color: rgba(51, 50, 50, 0.5);
+  cursor: pointer;
+}
 
-/* ----segundo html cuidados----*/
-.section-cuidado{
+/*-----segundo main----*/
+.section-cuidado {
   display: flex;
   align-items: center;
   padding: 2rem;
   column-gap: 2rem;
   text-align: center;
 }
-.section-cuidado h2, p{
+.section-cuidado h2 p {
   padding: 1rem;
 }
-.section-cuidado .img-tratamiento{
+.section-cuidado .img-tratamiento {
   width: 400px;
   height: 400px;
   object-fit: cover;
   clip-path: circle(50% at 50% 50%);
-  box-shadow: #666;
-}
-.card-cuidado{
-  background: rgb(224 215 215);
-  box-shadow: 0 8px 32px 0 rgb(199 177 177 / 63%);
-  border-radius: 5%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(199, 177, 177, 0.63);
 }
 
-.div-header-cuidados{
-  margin: 10px;
-  text-align: center;
-  justify-content: center;
-  color:rgb(50, 39, 35);
-  font-size: 2rem;
-  font-style:normal;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.pestanas p, .Pmu p p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font: large;
+  color: rgb(50, 39, 35);
+  background-color: rgb(224, 215, 215);
 }
-
-.container-card p{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font:large;
-  color:rgb(50, 39, 35);
-  background-color:beige;
-}
-
-.container-card img{
-  width: 40%;
-  height: 20%;
-  display: flex;
-  align-content: center;
-}
-.pestanas p {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font:large;
-  color:rgb(50, 39, 35);
-  background-color:beige
-}
-.pestanas img {
-  width: 40%;
-  height: 20%;
-  display: flex;
-  align-content: center;
-}
-.Pmu p {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font:large;
-  color:rgb(50, 39, 35);
-  background-color:beige
-}
-.Pmu img {
+.pestanas p .pestanas img, .Pmu p p .pestanas img, .pestanas p .Pmu p img, .Pmu .pestanas p p img, .Pmu p p p img {
   width: 40%;
   height: 20%;
   display: flex;
   align-content: center;
 }
 
-/*-----tercer html equipo---*/
+/*------ tercer main---*/
+.section-cuidado .img-tratamiento {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+  box-shadow: rgba(199, 177, 177, 0.63);
+}
 
 .titulo-agenda h1 p {
   text-align: center;
   justify-content: center;
-  color:rgb(50, 39, 35);
+  color: rgb(50, 39, 35);
   font-size: 2rem;
-  font-style:normal;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color:rgb(242 231 231);
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgba(199, 177, 177, 0.63);
   padding: 1rem;
 }
 
-.parrafo-equipo{
+.parrafo-equipo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
-  background-color: rgb(229 219 219);
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
 }
-
 .parrafo-equipo p {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color:rgb(50, 39, 35);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(50, 39, 35);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-
-.parrafo-equipo img {
+.parrafo-equipo p img {
   width: 70%;
   margin-bottom: 1.5rem;
 }
 
-.container{
+.container {
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.container p{
+.container .container p {
   text-align: center;
 }
-.parrafo-equipo .img-personal-1{
-  width: 60%;
+
+.parrafo-equipo .img-personal-1 {
+  width: 58%;
 }
 
-.parrafo-equipo .img-personal-3{
+.parrafo-equipo .img-personal-3 {
   width: 65%;
 }
 
-.descripcion-equipo{
+.descripcion-equipo {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -276,7 +262,7 @@
   row-gap: 2rem;
 }
 .descripcion-equipo p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(50, 39, 35);
   font-size: medium;
   text-align: center;
@@ -284,52 +270,33 @@
   margin: auto;
 }
 
-.btn-agenda-aqui{
+.btn-agenda-aqui {
   border-radius: 5rem;
-  background-color: #ddd6d6;
+  background-color: rgb(224, 215, 215);
   padding: 1rem 5rem 1rem 5rem;
   text-decoration: none;
   font-size: 1.5rem;
-  color: #322723;
+  color: rgb(50, 39, 35);
 }
 
-
+/*-----cuarto main---*/
+/*-----main contacto----*/
 .main a {
-  bottom:initial;
+  bottom: initial;
   color: rgb(50, 39, 35);
   margin: 8px;
-  font-size: larger
+  font-size: larger;
+  background-color: rgba(199, 177, 177, 0.63);
 }
 
-/*----cuarto html escuela----*/
-
-
-.container{
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container p{
-  text-align: center;
-}
-
-/*----quinto html contacto---*/
-
-
-
-/* ------ FOOTER------- */
-
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
   background-color: rgb(224, 215, 215);
 }
-
-.footer img{
+.footer img {
   width: 3rem;
   height: 3rem;
   margin-top: 5rem;
@@ -337,86 +304,167 @@
   min-width: auto;
 }
 
-/*----RESPONSIVE primer html---*/
+/*components*/
+.header-principal {
+  background-color: rgb(199, 181, 181);
+}
 
-@media (max-width:1024px){
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(50, 39, 35);
+}
+
+.navegacion-link {
+  text-decoration: none;
+}
+
+.card-cuidado {
+  background: rgb(224, 215, 215);
+  box-shadow: 0 8px 32px 0 rgba(199, 177, 177, 0.63);
+  border-radius: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.card-cuidado p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font: large;
+  color: rgb(50, 39, 35);
+  background-color: rgba(199, 177, 177, 0.63);
+  display: flex;
+}
+
+.container-card img {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+}
+
+.container {
+  background: rgb(224, 215, 215);
+  box-shadow: 0 8px 32px 0 rgba(199, 177, 177, 0.63);
+  border-radius: 5%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container .container p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font: large;
+  color: rgb(50, 39, 35);
+  background-color: rgba(199, 177, 177, 0.63);
+  text-align: center;
+}
+.container .container img {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+}
+
+/*media query*/
+/*----media index ---*/
+@media (max-width: 1024px) {
   .header-principal {
     background-color: rgb(231, 222, 222);
   }
   .navbar ul li a {
     color: #322723;
   }
-  }
-
-@media (max-width:768px){
-    .header-principal {
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-    background-color: rgb(199, 181, 181);
-    }
-    .navbar ul li a {
-    flex-direction: row;
-    justify-content: none;
-    align-items: center;
-    color: rgba(68, 67, 67, 0.18);
-    }
-  }
-
-  @media (max-widh:480px){
-    .header-principal {
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(158, 138, 138);
-    }
-    .navbar ul li a {
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-    color: rgb(50, 39, 35);
-    }
-  }
-
-/*---RESPONSIVE segundo html---*/
-
-@media (max-width:1024px){
+}
+/*----media segundo html-----*/
+@media (max-width: 1024px) {
   .section-cuidado {
     background-color: rgb(231, 222, 222);
   }
   .section-cuidado h2, p {
     color: #322723;
   }
+}
+/*------media tercer html---*/
+@media (max-width: 1024px) {
+  .div-header {
+    background-color: rgb(224, 215, 215);
   }
-
-@media (max-width:768px){
-    .section-cuidado {
+  .section-cuidado {
+    color: #3f3d3d;
+  }
+}
+/*media index*/
+@media (max-width: 768px) {
+  .header-principal {
     flex-direction: column;
     justify-content: none;
     align-items: center;
     background-color: rgb(199, 181, 181);
-    }
-    .section-cuidado h2, p {
+  }
+  .navbar ul li a {
     flex-direction: row;
     justify-content: none;
     align-items: center;
     color: rgba(68, 67, 67, 0.18);
-    }
   }
-
-  @media (max-widh:480px){
-    .section-cuidado {
-    flex-direction:column;
+}
+/*---media segundo html---*/
+@media (max-width: 768px) {
+  .section-cuidado {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    background-color: rgb(199, 181, 181);
+  }
+  .section-cuidado h2, p {
+    flex-direction: row;
+    justify-content: none;
+    align-items: center;
+    color: rgba(68, 67, 67, 0.18);
+  }
+}
+@media (max-wisth: 768px) {
+  .div-header {
+    background-color: rgba(199, 177, 177, 0.63);
+  }
+  .section-cuidado {
+    color: rgba(68, 67, 67, 0.18);
+  }
+}
+/*-----media index----*/
+@media (max-widh: 480px) {
+  .header-principal {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(158, 138, 138);
-    }
-    .section-cuidado h2, p{
+  }
+  .navbar ul li a {
     flex-direction: column;
     justify-content: none;
     align-items: center;
     color: rgb(50, 39, 35);
-    }
   }
+}
+/*media segundo html*/
+@media (max-widh: 480px) {
+  .section-cuidado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 138, 138);
+  }
+  .section-cuidado h2, p {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    color: rgb(50, 39, 35);
+  }
+}
+/*-----media segundo html----*/
+@media (max-width: 480px) {
+  .div-header {
+    background-color: rgb(224, 215, 215);
+  }
+  .div-header .section-cuidado {
+    color: #3f3d3d;
+  }
+}
 
-  /*--------*/
+/*# sourceMappingURL=style.css.map */

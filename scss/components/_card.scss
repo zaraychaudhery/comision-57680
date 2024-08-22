@@ -1,0 +1,40 @@
+.card-cuidado{
+    background: rgb(224 215 215);
+box-shadow: 0 8px 32px 0 rgb(199 177 177 / 63%);
+border-radius: 5%;
+border: 1px solid rgba(255, 255, 255, 0.18);
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font:large;
+color:rgb(50, 39, 35);
+background-color:$boxshadow;
+display: flex;
+}
+}
+    
+.container-card img{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-content: center;
+}
+
+.container{
+    background: rgb(224 215 215);
+box-shadow: 0 8px 32px 0 rgb(199 177 177 / 63%);
+border-radius: 5%;
+border: 1px solid rgba(255, 255, 255, 0.18);
+.container p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font:large;
+color:rgb(50, 39, 35);
+background-color:$boxshadow;
+text-align: center;
+}
+.container img{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-content: center;
+}
+}

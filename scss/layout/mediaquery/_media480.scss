@@ -1,0 +1,44 @@
+/*-----media index----*/
+
+@media (max-widh:480px){
+    .header-principal {
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 138, 138);
+    }
+    .navbar ul li a {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    color: rgb(50, 39, 35);
+    }
+}
+
+/*media segundo html*/
+
+@media (max-widh:480px){
+    .section-cuidado {
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 138, 138);
+    }
+    .section-cuidado h2, p{
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    color: rgb(50, 39, 35);
+    }
+}
+
+/*-----media segundo html----*/
+
+@media (max-width: 480px){
+    .div-header {
+        background-color: $cardcuidadofondo;
+        .section-cuidado{
+            color: $textosubtitulo;
+        }
+    }
+}

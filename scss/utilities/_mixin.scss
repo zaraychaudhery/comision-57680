@@ -1,0 +1,18 @@
+
+/*---mixin flex---*/
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@mixin flex2 {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    column-gap: 2rem;
+    text-align: center;
+}
