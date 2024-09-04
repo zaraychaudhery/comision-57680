@@ -32,12 +32,35 @@
     }
 }
 
-/*-----media segundo html----*/
+/*-----media tercer html----*/
 
 @media (max-width: 480px){
     .div-header {
+    background-color: $cardcuidadofondo;
+    .section-cuidado{
+    color: $textosubtitulo;
+    }
+}
+}
+
+/*---media cuarto html---*/
+
+@media (max-width: 480px){
+    .card-cuidado {
         background-color: $cardcuidadofondo;
-        .section-cuidado{
+        .descripcion-equipo{
+            color: $textosubtitulo;
+        }
+    }
+}
+
+
+/*---media quinto html---*/
+
+@media (max-width: 480px){
+    .form-flex {
+        background-color: $cardcuidadofondo;
+        .a-de-buttom {
             color: $textosubtitulo;
         }
     }

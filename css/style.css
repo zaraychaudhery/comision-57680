@@ -289,6 +289,17 @@
   background-color: rgba(199, 177, 177, 0.63);
 }
 
+.form-flex {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  column-gap: 2rem;
+  text-align: center;
+  border-bottom: 2rem;
+  justify-content: last baseline;
+  justify-items: center;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -389,6 +400,26 @@
     color: #3f3d3d;
   }
 }
+/*----media cuarto html---*/
+@media (max-width: 1024px) {
+  .card-cuidado {
+    background-color: rgb(224, 215, 215);
+  }
+  .descripcion-equipo {
+    color: rgba(68, 67, 67, 0.18);
+  }
+}
+/*---media quinto html---*/
+@media (max-width: 1024px) {
+  .form-flex {
+    background-color: rgb(224, 215, 215);
+  }
+  .a-de-buttom {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-items: flex-start;
+  }
+}
 /*media index*/
 @media (max-width: 768px) {
   .header-principal {
@@ -419,12 +450,33 @@
     color: rgba(68, 67, 67, 0.18);
   }
 }
-@media (max-wisth: 768px) {
+/*---media tercer html--*/
+@media (max-width: 768px) {
   .div-header {
     background-color: rgba(199, 177, 177, 0.63);
   }
   .section-cuidado {
     color: rgba(68, 67, 67, 0.18);
+  }
+}
+/*----media cuarto html---*/
+@media (max-width: 768px) {
+  .card-cuidado {
+    background-color: rgb(199, 181, 181);
+  }
+  .descripcion-equipo {
+    color: rgb(255, 255, 255);
+  }
+}
+/*---media quinto html---*/
+@media (media-width: 768px) {
+  .form-flex {
+    background-color: rgba(51, 50, 50, 0.5);
+  }
+  .a-de-buttom {
+    color: rgba(51, 50, 50, 0.5);
+    display: flex;
+    justify-items: flex-start;
   }
 }
 /*-----media index----*/
@@ -457,12 +509,30 @@
     color: rgb(50, 39, 35);
   }
 }
-/*-----media segundo html----*/
+/*-----media tercer html----*/
 @media (max-width: 480px) {
   .div-header {
     background-color: rgb(224, 215, 215);
   }
   .div-header .section-cuidado {
+    color: #3f3d3d;
+  }
+}
+/*---media cuarto html---*/
+@media (max-width: 480px) {
+  .card-cuidado {
+    background-color: rgb(224, 215, 215);
+  }
+  .card-cuidado .descripcion-equipo {
+    color: #3f3d3d;
+  }
+}
+/*---media quinto html---*/
+@media (max-width: 480px) {
+  .form-flex {
+    background-color: rgb(224, 215, 215);
+  }
+  .form-flex .a-de-buttom {
     color: #3f3d3d;
   }
 }

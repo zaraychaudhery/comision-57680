@@ -166,3 +166,10 @@ p{
     font-size: larger;
     background-color: $boxshadow;
 }
+
+.form-flex {
+    @include flex2;
+border-bottom: 2rem;
+justify-content: last baseline;
+justify-items: center;
+}

@@ -32,3 +32,27 @@
         color:$textosubtitulo
     }
 }
+
+/*----media cuarto html---*/
+
+@media (max-width:1024px){
+    .card-cuidado {
+        background-color: $colorfondo4;
+    }
+    .descripcion-equipo {
+        color: $colortexto3;
+    }
+}
+
+/*---media quinto html---*/
+
+@media (max-width:1024px){
+    .form-flex{
+        background-color: $colorfondo4;
+    }
+    .a-de-buttom {
+        color: $colortexto2;
+        display: flex;
+        justify-items: flex-start;
+    }
+}

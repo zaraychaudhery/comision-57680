@@ -35,11 +35,41 @@
     }
 }
 
-@media (max-wisth: 768px){
+/*---media tercer html--*/
+
+
+@media (max-width: 768px){
     .div-header{
         background-color: $boxshadow;
     }
     .section-cuidado {
         color: $colortexto3;
+    }
+}
+
+/*----media cuarto html---*/
+
+
+@media (max-width: 768px){
+    .card-cuidado{
+        background-color: $colorfondo1;
+    }
+    .descripcion-equipo{
+        color: $colortexto2;
+    }
+}
+
+
+/*---media quinto html---*/
+
+
+@media (media-width: 768px){
+    .form-flex{
+        background-color: $colorfondo3;
+    }
+    .a-de-buttom{
+        color: $colorfondo3;
+        display: flex;
+        justify-items: flex-start;
     }
 }
